@@ -242,14 +242,14 @@
     position: absolute;
     right: -30px;
     border-top: 70px solid transparent;
-    border-left: 30px solid red;
+    border-left: 30.5px solid red;
     border-bottom: 50px solid transparent;
 }
 
 .div-pro ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-inline: -20px;
     width: 60%;
 }
 
@@ -282,6 +282,7 @@
 }
 
 /* Responsive styles for mobile view */
+
 @media only screen and (max-width: 768px) {
     .section-3 h1 {
         font-size: 30px;
@@ -384,9 +385,11 @@
 
 .sec-four h1 {
     position: relative;
-    z-index: 1;
+    z-index: 3;
     color: rgb(9, 163, 163);
     text-align: start;
+    padding: 5px;
+    font-size: 30px;
 }
 
 /* Corner Div Styles */
@@ -395,13 +398,13 @@
     align-items: center;
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 26rem;
+    width: 25rem;
     text-align: start;
     border-radius: 20px;
     border: 1px solid brown;
     height: 9rem;
     position: absolute;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .corner-div-1 {
@@ -446,8 +449,8 @@
 
 .center-box {
     text-align: center;
-    width: 220px;
-    height: 220px;
+    width: 230px;
+    height: 230px;
     color: white;
     border: 1px solid white;
 }
@@ -479,11 +482,41 @@
 
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
-    .corner-div {
-        width: 18rem;
-        font-size: 16px;
-        height: 6rem;
+
+
+    .corner-div-1,
+    .corner-div-2,
+    .corner-div-3,
+    .corner-div-4 {
+        font-size: 13px;
     }
+
+    .corner-div-1 {
+        height: 30%;
+        width: 30%;
+        margin-inline: -3rem;
+    }
+
+    .corner-div-2 {
+        width: 30%;
+        height: 30%;
+        margin-inline: -3rem;
+    }
+
+    .corner-div-3 {
+
+        width: 30%;
+        height: 30%;
+        margin-inline: -3rem;
+    }
+
+    .corner-div-4 {
+        height: 30%;
+        width: 30%;
+        margin-inline: -3rem;
+    }
+
+
 
     .center-box {
         width: 100px;
@@ -496,56 +529,105 @@
     }
 
     .center-div1 {
-        top: 8rem;
+        top: 15rem;
         gap: 5px;
     }
 
     .center-div2 {
-        top: 15rem;
+        top: 22rem;
         gap: 5px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .corner-div {
-        width: 100%;
-        font-size: 14px;
-        text-align: center;
-        height: auto;
-        margin-bottom: 1rem;
-    }
 
-    .center-box {
-        width: 80px;
-        height: 80px;
-    }
-
-    .center-box-1 p,
-    .center-box-2 p {
-        margin-top: 10px;
-    }
-
-    .center-div1,
-    .center-div2 {
-        flex-direction: column;
-        gap: 5px;
-    }
 
     .corner-div-1,
     .corner-div-2,
     .corner-div-3,
     .corner-div-4 {
-        width: 100%;
-        height: auto;
-        top: unset;
-        position: relative;
-        margin: 10px 0;
+        font-size: 12px;
+    }
+
+
+    .corner-div-1 {
+        width: 40%;
+        height: 30%;
+        margin-inline: -3rem;
+
+    }
+
+    .corner-div-2 {
+        width: 40%;
+        height: 30%;
+        margin-inline: -3rem;
+
+    }
+
+    .corner-div-3 {
+
+        width: 40%;
+        height: 30%;
+        margin-inline: -3rem;
+
+
+
+    }
+
+    .corner-div-4 {
+        width: 40%;
+        height: 30%;
+        margin-inline: -3rem;
+
+
+    }
+
+
+    .center-box {
+        width: 130px;
+        height: 130px;
+    }
+
+    .center-box-1 p,
+    .center-box-2 p,
+    .center-box-3 p,
+    .center-box-4 p {
+        text-align: center;
+        width: 17px;
+        margin-top: 10px;
+        margin: auto;
+        font-size: 13px;
+    }
+
+    .center-box-3 p,
+    .center-box-4 p {
+
+        font-size: 10px;
+    }
+
+    .center-div1 {
+        top: 36%;
+        gap: 5px;
+    }
+
+    .center-div2 {
+        margin-top: 15px;
+        top: 50%;
+        gap: 5px;
     }
 
     .sec-four h1 {
         font-size: 18px;
         padding: 1rem;
     }
+
+    .per.cen {
+        font-size: 14px;
+        position: relative;
+
+        margin: 10px 0;
+    }
+
 }
 
 /* section  5 */
